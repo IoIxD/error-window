@@ -1,0 +1,3 @@
+{
+  "rust-analyzer.linkedProjects": ["./Cargo.toml",  "./error-window-macro/Cargo.toml"]
+}

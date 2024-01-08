@@ -68,6 +68,8 @@ dependencies = [
 [[package]]
 name = "error-window-macro"
 version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "65cb40a2deb19d807961f2868bfb3eaa5393c74fd9c8a247b311918da2484008"
 dependencies = [
  "proc-macro2",
  "quote",

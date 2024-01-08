@@ -11,14 +11,7 @@ fn parse_knobs(input: ItemFn) -> TokenStream {
     let ret_type = input.sig.output.to_token_stream();
     let inputs = inputs_;
     let body_ident = input.body().to_token_stream();
-    let attrs = input
-        .attrs()
-        .map(|f| f.to_token_stream().to_string())
-        .collect::<Vec<String>>()
-        .join("\n")
-        .to_token_stream();
     let body = quote! {
-        #attrs
         #visiblity #fn_token #name(#inputs) #ret_type {
             let builder = std::thread::Builder::new().name("Main thread".to_string());
             let thread_handle = builder
@@ -33,7 +26,7 @@ fn parse_knobs(input: ItemFn) -> TokenStream {
                                 .show()
                                 .expect("Could not display dialog box");
                         }
-                    }); // will panic in fn2
+                    });
                     if let Err(err) = result {
                         let mut er = format!("{:?}", err);
 
@@ -63,7 +56,6 @@ fn parse_knobs(input: ItemFn) -> TokenStream {
         use error_window::dialog::DialogBox;
     };
 
-    println!("{}", body);
     body
 }
 

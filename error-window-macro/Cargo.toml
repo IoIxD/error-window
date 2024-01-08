@@ -3,7 +3,7 @@ name = "error-window-macro"
 version = "1.0.0"
 edition = "2021"
 description = "Macro that the error-window crate re-exports"
-license = "GPL OR LGPL"
+license = "GPL-3.0-only OR LGPL-3.0-only"
 homepage = "https://github.com/IoIxD/error-window"
 
 [lib]

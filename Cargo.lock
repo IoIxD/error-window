@@ -59,7 +59,7 @@ dependencies = [
 
 [[package]]
 name = "error-window"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "dialog",
  "error-window-macro",
@@ -67,7 +67,7 @@ dependencies = [
 
 [[package]]
 name = "error-window-macro"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "proc-macro2",
  "quote",

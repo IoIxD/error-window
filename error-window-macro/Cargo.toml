@@ -1,7 +1,10 @@
 [package]
 name = "error-window-macro"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+description = "Macro that the error-window crate re-exports"
+license = "GPL OR LGPL"
+homepage = "https://github.com/IoIxD/error-window"
 
 [lib]
 proc-macro = true

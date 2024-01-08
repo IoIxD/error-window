@@ -1,7 +1,10 @@
 [package]
 name = "error-window"
-version = "0.1.0"
 edition = "2021"
+version = "1.0.0"
+description = "Simple Rust proc macro that will make your main function output errors as dialog boxes as well as errors to the console."
+license = "GPL OR LGPL"
+homepage = "https://github.com/IoIxD/error-window"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
